@@ -1,0 +1,14 @@
+.tftable{
+	color: #346;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	border-collapse: collapse;
+}
+
+th{
+	border: 1px solid blue;
+	text-align: left;
+	font-weight: bold;
+	background-color: gray;
+	color: white;
+}

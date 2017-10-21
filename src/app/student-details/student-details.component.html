@@ -1,0 +1,18 @@
+
+<div *ngIf="student">
+	<h2>{{student.name}} details are as below !!!</h2>
+	<table>
+		<tr>
+			<td><label>ID: </label></td>
+			<td>{{student.id}}</td>
+		</tr>
+		<tr>
+			<td><label>Name: </label></td>
+			<td><input [(ngModel)]="student.name" placeholder="name" /></td>
+		</tr>
+		<tr>
+			<td><label>Type: </label></td>
+			<td><input [(ngModel)]="student.description" placeholder="type" /></td>
+		</tr>
+	</table>
+</div>

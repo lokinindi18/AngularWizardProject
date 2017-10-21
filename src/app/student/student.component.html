@@ -1,0 +1,19 @@
+<table class="tftable">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Course Details</th>
+	<tr *ngFor="let student of students" (click)="onStudentSelected(student)">
+		<td>{{student.id}}</td>
+		<td>{{student.name}}</td>
+		<td>{{student.description}}</td>
+		<td>
+			<ul *ngFor="let course of student.courses">
+				<li>{{course.id}} - {{course.name}}</li>
+			</ul>
+		</td>
+	</tr>
+</table>
+<!--  when user selects the student record, a selection event is fires which will set the selectedStudent property value -->
+<student-details [student]="selectedStudent"></student-details>
